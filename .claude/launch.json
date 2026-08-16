@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "plus91-events-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8533"],
+      "port": 8533
+    },
+    {
+      "name": "plus91-events-streamlit",
+      "url": "http://localhost:8600",
+      "port": 8600
+    }
+  ]
+}

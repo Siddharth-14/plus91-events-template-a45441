@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>+91 Events — Cultural Events in Metro Vancouver</title>
+  <meta
+    name="description"
+    content="+91 Events (Cultural Events Society) curates exceptional Indian cultural experiences in Metro Vancouver — Garba nights, Navratri, Diwali, Holi, dance, music & activities."
+  />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a class="logo" href="#home">
+        <span class="logo-text">+91 <strong>EVENTS</strong></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a id="nav-cta" class="btn btn-nav-cta" href="#events" target="_blank" rel="noopener noreferrer">Get Tickets</a>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero" aria-label="Featured event"></section>
+
+    <!-- ============ EVENTS ============ -->
+    <section id="events" class="events-section">
+      <div class="section-inner">
+        <h2 class="section-title">Our Events</h2>
+        <p class="section-subtitle">
+          From Garba nights to Diwali melas — find your next celebration.
+        </p>
+
+        <div id="featured-event"></div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filter events by status">
+          <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-tab" data-filter="upcoming" role="tab" aria-selected="false">Upcoming</button>
+          <button class="filter-tab" data-filter="ongoing" role="tab" aria-selected="false">Ongoing</button>
+          <button class="filter-tab" data-filter="past" role="tab" aria-selected="false">Past</button>
+        </div>
+
+        <div id="events-grid" class="events-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="gallery-section">
+      <div class="section-inner">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-subtitle">
+          Moments from our celebrations.
+          <em>(Demo images shown below — real event photos will appear here once the team's shared Google Drive folder is connected. See the code comment above <code>GALLERY_CONFIG</code> in js/data.js.)</em>
+        </p>
+        <div id="gallery-grid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about-section">
+      <div class="section-inner">
+        <div class="about-grid">
+          <figure class="about-media">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Vibrant_culture.jpg/960px-Vibrant_culture.jpg"
+              alt="DEMO IMAGE — replace via Drive integration: a mother holding her baby while playing dandiya with a friend, a family moment at a festival"
+              loading="lazy"
+            />
+            <figcaption>Atishaychoubey / Wikimedia Commons (public domain)</figcaption>
+          </figure>
+
+          <div class="about-text">
+            <p class="about-kicker">Who We Are</p>
+            <h2 class="section-title about-title">About +91 Events</h2>
+            <p class="about-lead">
+              +91 Cultural Events Society specializes in curating exceptional cultural
+              experiences that resonate with authenticity &amp; charm.
+            </p>
+            <p class="about-body">
+              Based in Burnaby, BC, we bring Metro Vancouver's Indian community together
+              through joyful, family-friendly celebrations — from high-energy Garba nights
+              to Diwali melas and everything in between. Every event is designed to feel
+              like a homecoming: familiar rhythms, warm faces, and a dance floor open to
+              everyone.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar">
+                <span class="pillar-icon" aria-hidden="true">💃</span>
+                <h3>Dance</h3>
+                <p>Garba, Dandiya &amp; more — nights built for the dance floor.</p>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon" aria-hidden="true">🎶</span>
+                <h3>Music</h3>
+                <p>Live orchestras and DJs that keep the energy up all night.</p>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon" aria-hidden="true">🎊</span>
+                <h3>Activities</h3>
+                <p>Family-friendly festivities for every generation to enjoy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER / CONTACT ============ -->
+  <footer id="contact" class="site-footer">
+    <div class="section-inner footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">+91 <strong>EVENTS</strong></span>
+        <p>+91 Cultural Events Society</p>
+        <p>📍 Burnaby, BC · Metro Vancouver</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Get in Touch</h3>
+        <p>
+          <a id="footer-instagram" href="#" target="_blank" rel="noopener noreferrer">@plus91events</a>
+          on Instagram
+        </p>
+        <p>
+          <a id="footer-facebook" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </p>
+        <a id="footer-email" class="btn btn-outline" href="#">✉️ Message Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> +91 Cultural Events Society. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
